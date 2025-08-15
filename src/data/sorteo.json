@@ -1,0 +1,80 @@
+{
+  "sorteo": {
+    "nombre": "Sorteo Elecciones 2024",
+    "fecha": "2024-11-19",
+    "premio": 10000,
+    "resultadoReal": 156.78
+  },
+  "usuarios": [
+    {
+      "id": 1,
+      "nombre": "Juan Pérez",
+      "email": "juan@email.com",
+      "pronostico": 150.50,
+      "fechaPronostico": "2024-11-15"
+    },
+    {
+      "id": 2,
+      "nombre": "María García",
+      "email": "maria@email.com",
+      "pronostico": 155.00,
+      "fechaPronostico": "2024-11-16"
+    },
+    {
+      "id": 3,
+      "nombre": "Carlos López",
+      "email": "carlos@email.com",
+      "pronostico": 160.25,
+      "fechaPronostico": "2024-11-14"
+    },
+    {
+      "id": 4,
+      "nombre": "Ana Martínez",
+      "email": "ana@email.com",
+      "pronostico": 152.30,
+      "fechaPronostico": "2024-11-17"
+    },
+    {
+      "id": 5,
+      "nombre": "Luis Rodríguez",
+      "email": "luis@email.com",
+      "pronostico": 158.90,
+      "fechaPronostico": "2024-11-13"
+    },
+    {
+      "id": 6,
+      "nombre": "Elena Sánchez",
+      "email": "elena@email.com",
+      "pronostico": 154.75,
+      "fechaPronostico": "2024-11-18"
+    },
+    {
+      "id": 7,
+      "nombre": "Roberto Torres",
+      "email": "roberto@email.com",
+      "pronostico": 157.20,
+      "fechaPronostico": "2024-11-16"
+    },
+    {
+      "id": 8,
+      "nombre": "Carmen Ruiz",
+      "email": "carmen@email.com",
+      "pronostico": 153.45,
+      "fechaPronostico": "2024-11-15"
+    },
+    {
+      "id": 9,
+      "nombre": "Miguel Jiménez",
+      "email": "miguel@email.com",
+      "pronostico": 159.80,
+      "fechaPronostico": "2024-11-14"
+    },
+    {
+      "id": 10,
+      "nombre": "Isabel Moreno",
+      "email": "isabel@email.com",
+      "pronostico": 151.60,
+      "fechaPronostico": "2024-11-17"
+    }
+  ]
+} 
