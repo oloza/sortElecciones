@@ -1,6 +1,6 @@
 import React from 'react';
 import { UsuarioRanking } from '../types';
-import { formatearNumero, formatearFecha, obtenerColorPosicion, obtenerEmojiPosicion } from '../utils/rankingUtils';
+import { formatearNumero, formatearFecha, obtenerColorPosicion, obtenerEmojiPosicion, formatearPronosticos } from '../utils/rankingUtils';
 
 interface RankingTableProps {
   usuarios: UsuarioRanking[];
@@ -11,7 +11,7 @@ const RankingTable: React.FC<RankingTableProps> = ({ usuarios }) => {
     <div className="bg-white rounded-lg shadow-lg overflow-hidden">
       <div className="px-6 py-4 bg-gray-50 border-b">
         <h2 className="text-xl font-semibold text-gray-800">Ranking de Usuarios</h2>
-        <p className="text-sm text-gray-600">Ordenados por proximidad al resultado real</p>
+        <p className="text-sm text-gray-600">Ordenados por proximidad al porcentaje total real</p>
       </div>
       
       <div className="overflow-x-auto">
@@ -25,7 +25,10 @@ const RankingTable: React.FC<RankingTableProps> = ({ usuarios }) => {
                 Usuario
               </th>
               <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                Pronóstico
+                Pronósticos por Puesto
+              </th>
+              <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                % Total Pronóstico
               </th>
               <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
                 Diferencia
@@ -57,9 +60,14 @@ const RankingTable: React.FC<RankingTableProps> = ({ usuarios }) => {
                     <div className="text-sm text-gray-500">{usuario.email}</div>
                   </div>
                 </td>
+                <td className="px-6 py-4">
+                  <div className="text-sm text-gray-900">
+                    {formatearPronosticos(usuario.pronosticos)}
+                  </div>
+                </td>
                 <td className="px-6 py-4 whitespace-nowrap">
                   <span className="text-sm font-semibold text-blue-600">
-                    {formatearNumero(usuario.pronostico)}
+                    {formatearNumero(usuario.porcentajeTotalPronostico)}%
                   </span>
                 </td>
                 <td className="px-6 py-4 whitespace-nowrap">
@@ -67,7 +75,7 @@ const RankingTable: React.FC<RankingTableProps> = ({ usuarios }) => {
                     usuario.diferencia <= 1 ? 'text-green-600' : 
                     usuario.diferencia <= 3 ? 'text-yellow-600' : 'text-red-600'
                   }`}>
-                    ±{formatearNumero(usuario.diferencia)}
+                    ±{formatearNumero(usuario.diferencia)}%
                   </span>
                 </td>
                 <td className="px-6 py-4 whitespace-nowrap">

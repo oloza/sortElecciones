@@ -1,79 +1,132 @@
 {
   "sorteo": {
-    "nombre": "Sorteo Elecciones 2024",
+    "nombre": "Sorteo Elecciones 2024 - 3 Puestos",
     "fecha": "2024-11-19",
     "premio": 10000,
-    "resultadoReal": 156.78
+    "puestos": [
+      {
+        "posicion": 1,
+        "resultadoReal": 15.2
+      },
+      {
+        "posicion": 2,
+        "resultadoReal": 8.5
+      },
+      {
+        "posicion": 3,
+        "resultadoReal": 3.5
+      }
+    ]
   },
   "usuarios": [
     {
       "id": 1,
       "nombre": "Juan Pérez",
       "email": "juan@email.com",
-      "pronostico": 150.50,
+      "pronosticos": [
+        { "puesto": 1, "porcentaje": 42.5 },
+        { "puesto": 2, "porcentaje": 18.0 },
+        { "puesto": 3, "porcentaje": 9.5 }
+      ],
       "fechaPronostico": "2024-11-15"
     },
     {
       "id": 2,
       "nombre": "María García",
       "email": "maria@email.com",
-      "pronostico": 155.00,
+      "pronosticos": [
+        { "puesto": 1, "porcentaje": 38.0 },
+        { "puesto": 2, "porcentaje": 22.0 },
+        { "puesto": 3, "porcentaje": 12.0 }
+      ],
       "fechaPronostico": "2024-11-16"
     },
     {
       "id": 3,
       "nombre": "Carlos López",
       "email": "carlos@email.com",
-      "pronostico": 160.25,
+      "pronosticos": [
+        { "puesto": 1, "porcentaje": 45.0 },
+        { "puesto": 2, "porcentaje": 19.5 },
+        { "puesto": 3, "porcentaje": 8.0 }
+      ],
       "fechaPronostico": "2024-11-14"
     },
     {
       "id": 4,
       "nombre": "Ana Martínez",
       "email": "ana@email.com",
-      "pronostico": 152.30,
+      "pronosticos": [
+        { "puesto": 1, "porcentaje": 39.8 },
+        { "puesto": 2, "porcentaje": 20.5 },
+        { "puesto": 3, "porcentaje": 10.2 }
+      ],
       "fechaPronostico": "2024-11-17"
     },
     {
       "id": 5,
       "nombre": "Luis Rodríguez",
       "email": "luis@email.com",
-      "pronostico": 158.90,
+      "pronosticos": [
+        { "puesto": 1, "porcentaje": 41.2 },
+        { "puesto": 2, "porcentaje": 21.8 },
+        { "puesto": 3, "porcentaje": 11.5 }
+      ],
       "fechaPronostico": "2024-11-13"
     },
     {
       "id": 6,
       "nombre": "Elena Sánchez",
       "email": "elena@email.com",
-      "pronostico": 154.75,
+      "pronosticos": [
+        { "puesto": 1, "porcentaje": 37.5 },
+        { "puesto": 2, "porcentaje": 23.0 },
+        { "puesto": 3, "porcentaje": 13.0 }
+      ],
       "fechaPronostico": "2024-11-18"
     },
     {
       "id": 7,
       "nombre": "Roberto Torres",
       "email": "roberto@email.com",
-      "pronostico": 157.20,
+      "pronosticos": [
+        { "puesto": 1, "porcentaje": 40.5 },
+        { "puesto": 2, "porcentaje": 19.8 },
+        { "puesto": 3, "porcentaje": 9.8 }
+      ],
       "fechaPronostico": "2024-11-16"
     },
     {
       "id": 8,
       "nombre": "Carmen Ruiz",
       "email": "carmen@email.com",
-      "pronostico": 153.45,
+      "pronosticos": [
+        { "puesto": 1, "porcentaje": 43.2 },
+        { "puesto": 2, "porcentaje": 17.5 },
+        { "puesto": 3, "porcentaje": 8.8 }
+      ],
       "fechaPronostico": "2024-11-15"
     },
     {
       "id": 9,
       "nombre": "Miguel Jiménez",
       "email": "miguel@email.com",
-      "pronostico": 159.80,
+      "pronosticos": [
+        { "puesto": 1, "porcentaje": 36.8 },
+        { "puesto": 2, "porcentaje": 24.2 },
+        { "puesto": 3, "porcentaje": 14.5 }
+      ],
       "fechaPronostico": "2024-11-14"
     },
     {
       "id": 10,
       "nombre": "Isabel Moreno",
       "email": "isabel@email.com",
-      "pronostico": 151.60,
+      "pronosticos": [
+        { "puesto": 1, "porcentaje": 44.1 },
+        { "puesto": 2, "porcentaje": 16.8 },
+        { "puesto": 3, "porcentaje": 7.9 }
+      ],
       "fechaPronostico": "2024-11-17"
     }
   ]

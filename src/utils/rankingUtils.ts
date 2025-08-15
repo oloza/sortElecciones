@@ -1,13 +1,26 @@
 import { Usuario, UsuarioRanking } from '../types';
 
-export const calcularRanking = (usuarios: Usuario[], resultadoReal: number): UsuarioRanking[] => {
+export const calcularRanking = (usuarios: Usuario[], puestos: any[]): UsuarioRanking[] => {
+  // Calcular la suma total de los resultados reales
+  const sumaResultadosReales = puestos.reduce((total, puesto) => total + puesto.resultadoReal, 0);
+  
   return usuarios
     .map(usuario => {
-      const diferencia = Math.abs(usuario.pronostico - resultadoReal);
-      const porcentajeAcierto = ((1 - diferencia / resultadoReal) * 100);
+      // Calcular el porcentaje total del pronóstico del usuario
+      const porcentajeTotalPronostico = usuario.pronosticos.reduce(
+        (total, pronostico) => total + pronostico.porcentaje, 
+        0
+      );
+      
+      // Calcular la diferencia absoluta a la suma de resultados reales
+      const diferencia = Math.abs(porcentajeTotalPronostico - sumaResultadosReales);
+      
+      // Calcular el porcentaje de acierto
+      const porcentajeAcierto = ((1 - diferencia / sumaResultadosReales) * 100);
       
       return {
         ...usuario,
+        porcentajeTotalPronostico,
         diferencia,
         posicion: 0, // Se asignará después
         porcentajeAcierto: Math.max(0, porcentajeAcierto)
@@ -56,4 +69,15 @@ export const obtenerEmojiPosicion = (posicion: number): string => {
     default:
       return `${posicion}`;
   }
+};
+
+export const formatearPronosticos = (pronosticos: any[]): string => {
+  return pronosticos
+    .sort((a, b) => a.puesto - b.puesto)
+    .map(p => `${p.puesto}°: ${p.porcentaje}%`)
+    .join(' | ');
+};
+
+export const calcularSumaResultadosReales = (puestos: any[]): number => {
+  return puestos.reduce((total, puesto) => total + puesto.resultadoReal, 0);
 }; 

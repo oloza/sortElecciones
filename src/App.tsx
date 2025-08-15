@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Header from './components/Header';
 import RankingTable from './components/RankingTable';
 import { DatosSorteo, UsuarioRanking } from './types';
-import { calcularRanking } from './utils/rankingUtils';
+import { calcularRanking, calcularSumaResultadosReales, formatearNumero } from './utils/rankingUtils';
 import './App.css';
 
 function App() {
@@ -21,10 +21,10 @@ function App() {
         
         setDatos(datosSorteo);
         
-        // Calcular ranking
+        // Calcular ranking basándose en la proximidad a la suma de resultados reales
         const rankingCalculado = calcularRanking(
           datosSorteo.usuarios, 
-          datosSorteo.sorteo.resultadoReal
+          datosSorteo.sorteo.puestos
         );
         
         setRanking(rankingCalculado);
@@ -63,6 +63,8 @@ function App() {
     );
   }
 
+  const sumaResultadosReales = calcularSumaResultadosReales(datos.sorteo.puestos);
+
   return (
     <div className="min-h-screen bg-gray-100">
       <div className="container mx-auto px-4 py-8">
@@ -82,7 +84,10 @@ function App() {
               {ranking.length > 0 ? `${ranking[0].nombre}` : 'N/A'}
             </p>
             <p className="text-sm text-gray-600">
-              Diferencia: ±{ranking.length > 0 ? ranking[0].diferencia.toFixed(2) : '0'}
+              Diferencia: ±{ranking.length > 0 ? ranking[0].diferencia.toFixed(2) : '0'}%
+            </p>
+            <p className="text-sm text-gray-600">
+              Total: {ranking.length > 0 ? ranking[0].porcentajeTotalPronostico.toFixed(1) : '0'}%
             </p>
           </div>
           
@@ -93,6 +98,9 @@ function App() {
                 ? `${(ranking.reduce((acc, u) => acc + u.porcentajeAcierto, 0) / ranking.length).toFixed(1)}%`
                 : '0%'
               }
+            </p>
+            <p className="text-sm text-gray-600">
+              Suma Total Real: {formatearNumero(sumaResultadosReales)}%
             </p>
           </div>
         </div>
