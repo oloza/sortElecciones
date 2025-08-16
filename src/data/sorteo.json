@@ -1,8 +1,8 @@
 {
   "sorteo": {
-    "nombre": "Sorteo Elecciones 2024 - 3 Puestos",
-    "fecha": "2024-11-19",
-    "premio": 10000,
+    "nombre": "Elecciones 2025 - 3 mejores puestos",
+    "fecha": "2025-08-20",
+    "premio": 45,
     "puestos": [
       {
         "posicion": 1,
@@ -21,8 +21,8 @@
   "usuarios": [
     {
       "id": 1,
-      "nombre": "Juan Pérez",
-      "email": "juan@email.com",
+      "nombre": "Enrique",
+      "email": "quique",
       "pronosticos": [
         { "puesto": 1, "porcentaje": 42.5 },
         { "puesto": 2, "porcentaje": 18.0 },
@@ -32,8 +32,8 @@
     },
     {
       "id": 2,
-      "nombre": "María García",
-      "email": "maria@email.com",
+      "nombre": "Roger",
+      "email": "tiburoncin",
       "pronosticos": [
         { "puesto": 1, "porcentaje": 38.0 },
         { "puesto": 2, "porcentaje": 22.0 },
@@ -43,8 +43,8 @@
     },
     {
       "id": 3,
-      "nombre": "Carlos López",
-      "email": "carlos@email.com",
+      "nombre": "Elmer",
+      "email": "elmerzacho",
       "pronosticos": [
         { "puesto": 1, "porcentaje": 45.0 },
         { "puesto": 2, "porcentaje": 19.5 },
@@ -54,8 +54,8 @@
     },
     {
       "id": 4,
-      "nombre": "Ana Martínez",
-      "email": "ana@email.com",
+      "nombre": "Richard",
+      "email": "richi",
       "pronosticos": [
         { "puesto": 1, "porcentaje": 39.8 },
         { "puesto": 2, "porcentaje": 20.5 },
@@ -65,8 +65,8 @@
     },
     {
       "id": 5,
-      "nombre": "Luis Rodríguez",
-      "email": "luis@email.com",
+      "nombre": "Mariela",
+      "email": "marielita",
       "pronosticos": [
         { "puesto": 1, "porcentaje": 41.2 },
         { "puesto": 2, "porcentaje": 21.8 },
@@ -76,58 +76,14 @@
     },
     {
       "id": 6,
-      "nombre": "Elena Sánchez",
-      "email": "elena@email.com",
+      "nombre": "Nidia",
+      "email": "ni",
       "pronosticos": [
         { "puesto": 1, "porcentaje": 37.5 },
         { "puesto": 2, "porcentaje": 23.0 },
         { "puesto": 3, "porcentaje": 13.0 }
       ],
       "fechaPronostico": "2024-11-18"
-    },
-    {
-      "id": 7,
-      "nombre": "Roberto Torres",
-      "email": "roberto@email.com",
-      "pronosticos": [
-        { "puesto": 1, "porcentaje": 40.5 },
-        { "puesto": 2, "porcentaje": 19.8 },
-        { "puesto": 3, "porcentaje": 9.8 }
-      ],
-      "fechaPronostico": "2024-11-16"
-    },
-    {
-      "id": 8,
-      "nombre": "Carmen Ruiz",
-      "email": "carmen@email.com",
-      "pronosticos": [
-        { "puesto": 1, "porcentaje": 43.2 },
-        { "puesto": 2, "porcentaje": 17.5 },
-        { "puesto": 3, "porcentaje": 8.8 }
-      ],
-      "fechaPronostico": "2024-11-15"
-    },
-    {
-      "id": 9,
-      "nombre": "Miguel Jiménez",
-      "email": "miguel@email.com",
-      "pronosticos": [
-        { "puesto": 1, "porcentaje": 36.8 },
-        { "puesto": 2, "porcentaje": 24.2 },
-        { "puesto": 3, "porcentaje": 14.5 }
-      ],
-      "fechaPronostico": "2024-11-14"
-    },
-    {
-      "id": 10,
-      "nombre": "Isabel Moreno",
-      "email": "isabel@email.com",
-      "pronosticos": [
-        { "puesto": 1, "porcentaje": 44.1 },
-        { "puesto": 2, "porcentaje": 16.8 },
-        { "puesto": 3, "porcentaje": 7.9 }
-      ],
-      "fechaPronostico": "2024-11-17"
     }
   ]
 } 

@@ -91,7 +91,7 @@ function App() {
             </p>
           </div>
           
-          <div className="bg-white p-6 rounded-lg shadow-lg">
+          {/* <div className="bg-white p-6 rounded-lg shadow-lg">
             <h3 className="text-lg font-semibold text-gray-800 mb-2">Promedio Acierto</h3>
             <p className="text-3xl font-bold text-purple-600">
               {ranking.length > 0 
@@ -102,7 +102,7 @@ function App() {
             <p className="text-sm text-gray-600">
               Suma Total Real: {formatearNumero(sumaResultadosReales)}%
             </p>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>
