@@ -20,6 +20,10 @@ const RankingTable: React.FC<RankingTableProps> = ({ usuarios }) => {
     return () => window.removeEventListener('resize', checkMobile);
   }, []);
 
+  const mla = {
+    marginLeft: 'auto'
+  };
+
   return (
     <div className="bg-white rounded-lg shadow-lg overflow-hidden">
       <div className="px-4 sm:px-6 py-4 bg-gray-50 border-b">
@@ -32,7 +36,7 @@ const RankingTable: React.FC<RankingTableProps> = ({ usuarios }) => {
         <div>
           {usuarios.map((usuario) => (
             <div key={usuario.id} className="border-b border-gray-200 p-4">
-              <div className="flex items-center justify-between mb-3">
+              <div className="flex items-center mb-3">
                 <div className="flex items-center space-x-3">
                   <span 
                     className="inline-flex items-center justify-center w-8 h-8 rounded-full text-sm font-semibold text-white"
@@ -42,10 +46,10 @@ const RankingTable: React.FC<RankingTableProps> = ({ usuarios }) => {
                   </span>
                   <div>
                     <div className="text-sm font-medium text-gray-900">{usuario.nombre}</div>
-                    <div className="text-xs text-gray-500">{usuario.email}</div>
+                    {/* <div className="text-xs text-gray-500">{usuario.email}</div> */}
                   </div>
                 </div>
-                <div className="text-right">
+               <div style={mla}>
                   <div className="text-sm font-semibold text-blue-600">
                     {formatearNumero(usuario.porcentajeTotalPronostico)}%
                   </div>
@@ -62,7 +66,7 @@ const RankingTable: React.FC<RankingTableProps> = ({ usuarios }) => {
                 <div className="text-xs font-medium text-gray-700 uppercase tracking-wide">Pronósticos por Puesto:</div>
                 {usuario.pronosticos.map((pronostico, index) => (
                   <div key={index} className="flex justify-between items-center py-1 px-3 bg-gray-50 rounded">
-                    <span className="text-sm font-medium text-gray-600">{pronostico.puesto}°:</span>
+                    <span className="text-sm font-medium text-gray-600">{pronostico.puesto}°:&nbsp;</span>
                     <span className="text-sm text-gray-900">{formatearNumero(pronostico.porcentaje)}%</span>
                   </div>
                 ))}
@@ -113,7 +117,7 @@ const RankingTable: React.FC<RankingTableProps> = ({ usuarios }) => {
                     <td className="px-3 sm:px-6 py-4 whitespace-nowrap">
                       <div>
                         <div className="text-sm font-medium text-gray-900">{usuario.nombre}</div>
-                        <div className="text-sm text-gray-500">{usuario.email}</div>
+                        {/* <div className="text-sm text-gray-500">{usuario.email}</div> */}
                       </div>
                     </td>
                     <td className="px-3 sm:px-6 py-4">

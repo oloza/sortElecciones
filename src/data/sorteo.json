@@ -1,28 +1,28 @@
 {
   "sorteo": {
     "nombre": "Elecciones 2025 - 3 mejores puestos",
-    "fecha": "2025-08-20",
-    "premio": 45,
+    "fecha": "2025-08-18",
+    "premio": 35,
     "puestos": [
       {
         "posicion": 1,
-        "resultadoReal": 15.2
+        "resultadoReal": 0
       },
       {
         "posicion": 2,
-        "resultadoReal": 8.5
+        "resultadoReal": 0
       },
       {
         "posicion": 3,
-        "resultadoReal": 3.5
-      }
+        "resultadoReal": 0
+            }
     ]
   },
   "usuarios": [
     {
       "id": 1,
-      "nombre": "Enrique",
-      "email": "quique",
+      "nombre": "Quique",
+      "email": "Quiquin",
       "pronosticos": [
         { "puesto": 1, "porcentaje": 42.5 },
         { "puesto": 2, "porcentaje": 18.0 },
@@ -56,6 +56,17 @@
       "id": 4,
       "nombre": "Richard",
       "email": "richi",
+      "pronosticos": [
+        { "puesto": 1, "porcentaje": 39.8 },
+        { "puesto": 2, "porcentaje": 20.5 },
+        { "puesto": 3, "porcentaje": 10.2 }
+      ],
+      "fechaPronostico": "2024-11-17"
+    },
+    {
+      "id": 4,
+      "nombre": "Orlando",
+      "email": "orli",
       "pronosticos": [
         { "puesto": 1, "porcentaje": 39.8 },
         { "puesto": 2, "porcentaje": 20.5 },
