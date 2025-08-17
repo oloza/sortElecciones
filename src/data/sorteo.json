@@ -24,9 +24,9 @@
       "nombre": "Quique",
       "email": "Quiquin",
       "pronosticos": [
-        { "puesto": 1, "porcentaje": 42.5 },
-        { "puesto": 2, "porcentaje": 18.0 },
-        { "puesto": 3, "porcentaje": 9.5 }
+        { "puesto": 1, "porcentaje": 25.0 },
+        { "puesto": 2, "porcentaje": 20.0 },
+        { "puesto": 3, "porcentaje": 18.0 }
       ],
       "fechaPronostico": "2024-11-15"
     },
@@ -35,9 +35,9 @@
       "nombre": "Roger",
       "email": "tiburoncin",
       "pronosticos": [
-        { "puesto": 1, "porcentaje": 38.0 },
-        { "puesto": 2, "porcentaje": 22.0 },
-        { "puesto": 3, "porcentaje": 12.0 }
+        { "puesto": 1, "porcentaje": 27.66 },
+        { "puesto": 2, "porcentaje": 25.62 },
+        { "puesto": 3, "porcentaje": 12.42 }
       ],
       "fechaPronostico": "2024-11-16"
     },
@@ -46,9 +46,9 @@
       "nombre": "Elmer",
       "email": "elmerzacho",
       "pronosticos": [
-        { "puesto": 1, "porcentaje": 45.0 },
-        { "puesto": 2, "porcentaje": 19.5 },
-        { "puesto": 3, "porcentaje": 8.0 }
+        { "puesto": 1, "porcentaje": 22.5 },
+        { "puesto": 2, "porcentaje": 20.0 },
+        { "puesto": 3, "porcentaje": 9.0 }
       ],
       "fechaPronostico": "2024-11-14"
     },
@@ -57,44 +57,55 @@
       "nombre": "Richard",
       "email": "richi",
       "pronosticos": [
-        { "puesto": 1, "porcentaje": 39.8 },
-        { "puesto": 2, "porcentaje": 20.5 },
-        { "puesto": 3, "porcentaje": 10.2 }
-      ],
-      "fechaPronostico": "2024-11-17"
-    },
-    {
-      "id": 4,
-      "nombre": "Orlando",
-      "email": "orli",
-      "pronosticos": [
-        { "puesto": 1, "porcentaje": 39.8 },
-        { "puesto": 2, "porcentaje": 20.5 },
-        { "puesto": 3, "porcentaje": 10.2 }
+        { "puesto": 1, "porcentaje": 25.0 },
+        { "puesto": 2, "porcentaje": 22.0 },
+        { "puesto": 3, "porcentaje": 22.0 }
       ],
       "fechaPronostico": "2024-11-17"
     },
     {
       "id": 5,
+      "nombre": "Orlando",
+      "email": "orli",
+      "pronosticos": [
+        { "puesto": 1, "porcentaje": 29.5 },
+        { "puesto": 2, "porcentaje": 27.9 },
+        { "puesto": 3, "porcentaje": 19.7 }
+      ],
+      "fechaPronostico": "2024-11-17"
+    },
+    {
+      "id": 6,
       "nombre": "Mariela",
       "email": "marielita",
       "pronosticos": [
-        { "puesto": 1, "porcentaje": 41.2 },
-        { "puesto": 2, "porcentaje": 21.8 },
-        { "puesto": 3, "porcentaje": 11.5 }
+        { "puesto": 1, "porcentaje": 27.3 },
+        { "puesto": 2, "porcentaje": 26.9 },
+        { "puesto": 3, "porcentaje": 15.5 }
       ],
       "fechaPronostico": "2024-11-13"
     },
     {
-      "id": 6,
+      "id": 7,
       "nombre": "Nidia",
       "email": "ni",
       "pronosticos": [
-        { "puesto": 1, "porcentaje": 37.5 },
-        { "puesto": 2, "porcentaje": 23.0 },
-        { "puesto": 3, "porcentaje": 13.0 }
+        { "puesto": 1, "porcentaje": 30.0 },
+        { "puesto": 2, "porcentaje": 28.0 },
+        { "puesto": 3, "porcentaje": 15.0 }
       ],
       "fechaPronostico": "2024-11-18"
-    }
+    },
+    {
+      "id": 8,
+      "nombre": "Duve",
+      "email": "doc",
+      "pronosticos": [
+        { "puesto": 1, "porcentaje": 26.43 },
+        { "puesto": 2, "porcentaje": 24.03 },
+        { "puesto": 3, "porcentaje": 18.14 }
+      ],
+      "fechaPronostico": "2024-11-13"
+    }       
   ]
 } 
